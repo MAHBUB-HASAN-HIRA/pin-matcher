@@ -34,7 +34,6 @@ const generate_btn = document.querySelector('.generate-btn');
                         const submit_btn = document.querySelector('.submit-btn');
                         submit_btn.setAttribute('disabled', 'disabled');
                         submit_btn.style.backgroundColor = 'black';
-                        console.log('submit btn disabled');
                         document.getElementById('try_left').innerHTML = '0';
                     }          
             }  
@@ -51,7 +50,6 @@ function removed_last_item() {
     let  convert_number_to_string = removed_last_item.toString(removed_last_item.length);
     convert_number_to_string = convert_number_to_string.slice(0, -1);
     document.getElementById('display_output').value = convert_number_to_string;
-    console.log(convert_number_to_string);
 }
 
 //function that clear the display_output field 
